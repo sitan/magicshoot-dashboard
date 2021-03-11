@@ -1,0 +1,28 @@
+{
+  "dashboardApp": {
+    "admin": {
+      "home": {
+        "title": "Admins",
+        "createLabel": "Créer un nouveau Admin",
+        "createOrEditLabel": "Créer ou éditer un Admin",
+        "notFound": "Aucun Admin trouvé"
+      },
+      "created": "Un nouveau Admin a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Admin avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Admin avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Admin {{ id }} ?"
+      },
+      "detail": {
+        "title": "Admin"
+      },
+      "adminId": "Admin Id",
+      "adminName": "Admin Name",
+      "adminEmail": "Admin Email",
+      "adminPassword": "Admin Password",
+      "adminCreatedAt": "Admin Created At",
+      "adminModifiedAt": "Admin Modified At",
+      "reseller": "Reseller"
+    }
+  }
+}

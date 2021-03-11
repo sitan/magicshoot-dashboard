@@ -1,0 +1,46 @@
+{
+  "dashboardApp": {
+    "company": {
+      "home": {
+        "title": "Companies",
+        "createLabel": "Create a new Company",
+        "createOrEditLabel": "Create or edit a Company",
+        "notFound": "No Companies found"
+      },
+      "created": "A new Company is created with identifier {{ param }}",
+      "updated": "A Company is updated with identifier {{ param }}",
+      "deleted": "A Company is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Company {{ id }}?"
+      },
+      "detail": {
+        "title": "Company"
+      },
+      "companyId": "Company Id",
+      "resellerId": "Reseller Id",
+      "companyName": "Company Name",
+      "billingAdress1": "Billing Adress 1",
+      "billingAdress2": "Billing Adress 2",
+      "billingZip": "Billing Zip",
+      "billingPlace": "Billing Place",
+      "billingCountry": "Billing Country",
+      "billingEmail": "Billing Email",
+      "billingPhone": "Billing Phone",
+      "shippingAdress1": "Shipping Adress 1",
+      "shippingAdress2": "Shipping Adress 2",
+      "shippingZip": "Shipping Zip",
+      "shippingPlace": "Shipping Place",
+      "shippingCountry": "Shipping Country",
+      "shippingEmail": "Shipping Email",
+      "shippingPhone": "Shipping Phone",
+      "vatPercentage": "Vat Percentage",
+      "vatNumber": "Vat Number",
+      "companyCreatedAt": "Company Created At",
+      "companyModifiedAt": "Company Modified At",
+      "event": "Event",
+      "customer": "Customer",
+      "contact": "Contact",
+      "reseller": "Reseller"
+    }
+  }
+}

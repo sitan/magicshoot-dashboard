@@ -1,0 +1,212 @@
+
+application {
+  config {
+    baseName dashboard,
+    applicationType monolith,
+    packageName nl.magicshoot.dashboard,
+    authenticationType jwt,
+    prodDatabaseType mysql,
+    clientFramework react
+  }
+  entities *
+}
+entity Admin {
+	adminId Integer,
+    adminName String,
+    adminEmail String,
+    adminPassword String,
+    adminCreatedAt LocalDate,
+    adminModifiedAt LocalDate
+    }
+entity Reseller {
+	resellerId Integer,
+    adminId Integer,
+    resellerName String,
+    resellerEmail String,
+    resellerPassword String,
+    resellerCreatedAt LocalDate,
+    resellerModifiedAt LocalDate
+    }
+    
+entity Company {
+	companyId Integer,
+    resellerId Integer,
+    companyName String,
+    billingAdress1 String,
+    billingAdress2 String,
+    billingZip String,
+    billingPlace String,
+    billingCountry String,
+    billingEmail String,
+    billingPhone String,
+    shippingAdress1 String,
+    shippingAdress2 String,
+    shippingZip String,
+    shippingPlace String,
+    shippingCountry String,
+    shippingEmail String,
+    shippingPhone String,
+    vatPercentage Float,
+    vatNumber String,
+    companyCreatedAt LocalDate,
+    companyModifiedAt LocalDate
+  
+}
+
+entity Contact {
+	contactId Integer,
+    contactName String,
+    companyId Integer,
+    contactTelephone String,
+    contactEmail String,
+    contactPassword String,
+    contactCreatedAt LocalDate,
+    contactModifiedAt LocalDate
+     
+}
+
+entity Customer {
+	customerId Integer,
+    companyId Integer,
+    contactEmail String,
+    contactCreatedAt LocalDate,
+    contactModifiedAt LocalDate
+     
+}
+
+entity Quote {
+ 	quoteId Integer,
+    contactId Integer,
+    companyId Integer,
+    quoteDescription String,
+    quotePrice Float,
+    orderNumber String,
+    quoteCreatedAt LocalDate,
+    quoteModifiedAt LocalDate,
+}
+
+entity Invoice {
+	invoiceId Integer,
+    contactId Integer,
+    companyId Integer,
+    invoiceNumber String,
+    orderNumber String,
+    orderDateTime String,
+    createdAt LocalDate,
+    modifiedAt LocalDate
+}
+
+entity Event {
+	eventId Integer,
+    companyId Integer,
+    eventName String,
+    eventStartDate LocalDate,
+    eventEndDate LocalDate,
+    eventStartTime LocalDate,
+    eventEndTime LocalDate,
+    eventType EventType
+    
+}
+enum EventType {
+  ONEOFF,
+  MULTIPLEDAYS,
+  SEMIPERMANENT
+  
+  } 
+entity Device {
+	deviceId Integer,
+    deviceName String,
+    deviceType DeviceType
+    }
+enum DeviceType {
+  CAMERA,
+  PAYTER,
+  LABELPRINTER,
+  PHOTOPRINTER,
+  TOUCHSCREEN,
+  TV40INCH,
+  PC,
+  MODEM
+  
+  } 
+entity MediaIn {
+	mediaInId Integer,
+    mediaInName String,
+    mediaUse MediaUse,
+    mediaInType MediaType,
+    }
+enum MediaUse {
+  FOREGROUND,
+  BACKGROUND,
+  HANDPROP,
+  FACEPROP
+  } 
+entity MediaOut {
+	mediaOutId Integer,
+    mediaOutName String,
+    mediaOutType MediaType,
+    }
+enum MediaType {
+  PHOTO,
+  VIDEO,
+  SOUND,
+  MUSIC
+  } 
+entity Label {
+	labelId Integer,
+    labelName String,
+    labelType LabelType,
+    labelWidth Integer,
+    labelHeight Integer,
+    }
+enum LabelType {
+  THERMISCH,
+  INKT
+  }    
+entity Print {
+	printId Integer,
+    printName String,
+    printType PrintType,
+    printWidth Integer,
+    printHeight Integer,
+    } 
+enum PrintType {
+  GLANZEND,
+  MAT
+  }   
+entity Payments {
+	paymentId Integer,
+    paymentDateTime LocalDate,
+    }    
+   
+    
+    
+relationship OneToMany {
+  Company{event} to Event{company}
+}
+
+relationship OneToMany {
+  Company{customer} to Customer{company}
+}
+
+relationship OneToMany {
+  Admin{reseller} to Reseller{admin}
+}
+
+relationship OneToMany {
+  Reseller{company} to Company{reseller}
+}
+
+relationship OneToMany {
+  Company{contact} to Contact{company}
+}
+
+relationship OneToMany {
+  Contact{quote} to Quote{contact}
+}
+relationship OneToMany {
+  Quote{invoice} to Invoice{quote}
+}
+
+
+    

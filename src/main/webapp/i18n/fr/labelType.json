@@ -1,0 +1,9 @@
+{
+  "dashboardApp": {
+    "LabelType": {
+      "null": "",
+      "THERMISCH": "THERMISCH",
+      "INKT": "INKT"
+    }
+  }
+}

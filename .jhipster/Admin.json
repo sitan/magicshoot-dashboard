@@ -1,0 +1,48 @@
+{
+  "name": "Admin",
+  "fields": [
+    {
+      "fieldName": "adminId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adminName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adminCreatedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "adminModifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "reseller",
+      "otherEntityRelationshipName": "admin",
+      "relationshipName": "reseller"
+    }
+  ],
+  "changelogDate": "20210311154252",
+  "entityTableName": "admin",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

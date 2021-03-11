@@ -13,9 +13,6 @@ import org.springframework.boot.info.BuildProperties;
 import org.springframework.boot.info.GitProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.serviceregistry.Registration;
 import org.springframework.context.annotation.*;
 
 @Configuration
@@ -50,6 +47,27 @@ public class CacheConfiguration {
             createCache(cm, nl.magicshoot.dashboard.domain.User.class.getName());
             createCache(cm, nl.magicshoot.dashboard.domain.Authority.class.getName());
             createCache(cm, nl.magicshoot.dashboard.domain.User.class.getName() + ".authorities");
+            createCache(cm, nl.magicshoot.dashboard.domain.Admin.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Admin.class.getName() + ".resellers");
+            createCache(cm, nl.magicshoot.dashboard.domain.Reseller.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Reseller.class.getName() + ".companies");
+            createCache(cm, nl.magicshoot.dashboard.domain.Company.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Company.class.getName() + ".events");
+            createCache(cm, nl.magicshoot.dashboard.domain.Company.class.getName() + ".customers");
+            createCache(cm, nl.magicshoot.dashboard.domain.Company.class.getName() + ".contacts");
+            createCache(cm, nl.magicshoot.dashboard.domain.Contact.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Contact.class.getName() + ".quotes");
+            createCache(cm, nl.magicshoot.dashboard.domain.Customer.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Quote.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Quote.class.getName() + ".invoices");
+            createCache(cm, nl.magicshoot.dashboard.domain.Invoice.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Event.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Device.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.MediaIn.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.MediaOut.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Label.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Print.class.getName());
+            createCache(cm, nl.magicshoot.dashboard.domain.Payments.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,57 @@
+{
+  "name": "Invoice",
+  "fields": [
+    {
+      "fieldName": "invoiceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "companyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "invoiceNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "orderDateTime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "modifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "quote",
+      "otherEntityRelationshipName": "invoice",
+      "relationshipName": "quote",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210311154852",
+  "entityTableName": "invoice",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

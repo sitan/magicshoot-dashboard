@@ -1,0 +1,35 @@
+{
+  "name": "MediaIn",
+  "fields": [
+    {
+      "fieldName": "mediaInId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mediaInName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mediaUse",
+      "fieldType": "MediaUse",
+      "fieldValues": "FOREGROUND,BACKGROUND,HANDPROP,FACEPROP"
+    },
+    {
+      "fieldName": "mediaInType",
+      "fieldType": "MediaType",
+      "fieldValues": "PHOTO,VIDEO,SOUND,MUSIC"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210311155152",
+  "entityTableName": "media_in",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

@@ -6,8 +6,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 import java.time.Instant;
-import nl.magicshoot.dashboard.MagicshootDashboardApp;
-import nl.magicshoot.dashboard.config.TestSecurityConfiguration;
+import nl.magicshoot.dashboard.DashboardApp;
 import nl.magicshoot.dashboard.domain.PersistentAuditEvent;
 import nl.magicshoot.dashboard.repository.PersistenceAuditEventRepository;
 import nl.magicshoot.dashboard.security.AuthoritiesConstants;
@@ -29,7 +28,7 @@ import org.springframework.transaction.annotation.Transactional;
  */
 @AutoConfigureMockMvc
 @WithMockUser(authorities = AuthoritiesConstants.ADMIN)
-@SpringBootTest(classes = { MagicshootDashboardApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = DashboardApp.class)
 @Transactional
 public class AuditResourceIT {
     private static final String SAMPLE_PRINCIPAL = "SAMPLE_PRINCIPAL";

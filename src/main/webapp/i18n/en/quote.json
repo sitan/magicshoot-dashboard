@@ -1,0 +1,31 @@
+{
+  "dashboardApp": {
+    "quote": {
+      "home": {
+        "title": "Quotes",
+        "createLabel": "Create a new Quote",
+        "createOrEditLabel": "Create or edit a Quote",
+        "notFound": "No Quotes found"
+      },
+      "created": "A new Quote is created with identifier {{ param }}",
+      "updated": "A Quote is updated with identifier {{ param }}",
+      "deleted": "A Quote is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Quote {{ id }}?"
+      },
+      "detail": {
+        "title": "Quote"
+      },
+      "quoteId": "Quote Id",
+      "contactId": "Contact Id",
+      "companyId": "Company Id",
+      "quoteDescription": "Quote Description",
+      "quotePrice": "Quote Price",
+      "orderNumber": "Order Number",
+      "quoteCreatedAt": "Quote Created At",
+      "quoteModifiedAt": "Quote Modified At",
+      "invoice": "Invoice",
+      "contact": "Contact"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "dashboardApp": {
+    "EventType": {
+      "null": "",
+      "ONEOFF": "ONEOFF",
+      "MULTIPLEDAYS": "MULTIPLEDAYS",
+      "SEMIPERMANENT": "SEMIPERMANENT"
+    }
+  }
+}

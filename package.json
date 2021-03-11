@@ -1,7 +1,7 @@
 {
-  "name": "magicshoot-dashboard",
+  "name": "dashboard",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for magicshootDashboard",
+  "description": "Description for dashboard",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

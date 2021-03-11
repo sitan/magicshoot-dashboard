@@ -5,8 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
-import nl.magicshoot.dashboard.MagicshootDashboardApp;
-import nl.magicshoot.dashboard.config.TestSecurityConfiguration;
+import nl.magicshoot.dashboard.DashboardApp;
 import nl.magicshoot.dashboard.repository.timezone.DateTimeWrapper;
 import nl.magicshoot.dashboard.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for the ZoneId Hibernate configuration.
  */
-@SpringBootTest(classes = { MagicshootDashboardApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = DashboardApp.class)
 public class HibernateTimeZoneIT {
     @Autowired
     private DateTimeWrapperRepository dateTimeWrapperRepository;

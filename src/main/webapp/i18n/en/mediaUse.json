@@ -1,0 +1,11 @@
+{
+  "dashboardApp": {
+    "MediaUse": {
+      "null": "",
+      "FOREGROUND": "FOREGROUND",
+      "BACKGROUND": "BACKGROUND",
+      "HANDPROP": "HANDPROP",
+      "FACEPROP": "FACEPROP"
+    }
+  }
+}

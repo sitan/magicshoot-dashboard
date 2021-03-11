@@ -1,0 +1,30 @@
+{
+  "dashboardApp": {
+    "reseller": {
+      "home": {
+        "title": "Resellers",
+        "createLabel": "Create a new Reseller",
+        "createOrEditLabel": "Create or edit a Reseller",
+        "notFound": "No Resellers found"
+      },
+      "created": "A new Reseller is created with identifier {{ param }}",
+      "updated": "A Reseller is updated with identifier {{ param }}",
+      "deleted": "A Reseller is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Reseller {{ id }}?"
+      },
+      "detail": {
+        "title": "Reseller"
+      },
+      "resellerId": "Reseller Id",
+      "adminId": "Admin Id",
+      "resellerName": "Reseller Name",
+      "resellerEmail": "Reseller Email",
+      "resellerPassword": "Reseller Password",
+      "resellerCreatedAt": "Reseller Created At",
+      "resellerModifiedAt": "Reseller Modified At",
+      "company": "Company",
+      "admin": "Admin"
+    }
+  }
+}

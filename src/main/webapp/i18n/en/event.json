@@ -1,0 +1,30 @@
+{
+  "dashboardApp": {
+    "event": {
+      "home": {
+        "title": "Events",
+        "createLabel": "Create a new Event",
+        "createOrEditLabel": "Create or edit a Event",
+        "notFound": "No Events found"
+      },
+      "created": "A new Event is created with identifier {{ param }}",
+      "updated": "A Event is updated with identifier {{ param }}",
+      "deleted": "A Event is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Event {{ id }}?"
+      },
+      "detail": {
+        "title": "Event"
+      },
+      "eventId": "Event Id",
+      "companyId": "Company Id",
+      "eventName": "Event Name",
+      "eventStartDate": "Event Start Date",
+      "eventEndDate": "Event End Date",
+      "eventStartTime": "Event Start Time",
+      "eventEndTime": "Event End Time",
+      "eventType": "Event Type",
+      "company": "Company"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "dashboardApp": {
+    "mediaIn": {
+      "home": {
+        "title": "MediaIns",
+        "createLabel": "Créer un nouveau Media In",
+        "createOrEditLabel": "Créer ou éditer un Media In",
+        "notFound": "Aucun Media In trouvé"
+      },
+      "created": "Un nouveau Media In a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Media In avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Media In avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Media In {{ id }} ?"
+      },
+      "detail": {
+        "title": "Media In"
+      },
+      "mediaInId": "Media In Id",
+      "mediaInName": "Media In Name",
+      "mediaUse": "Media Use",
+      "mediaInType": "Media In Type"
+    }
+  }
+}

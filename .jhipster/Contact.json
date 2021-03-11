@@ -1,0 +1,63 @@
+{
+  "name": "Contact",
+  "fields": [
+    {
+      "fieldName": "contactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contactName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contactTelephone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactCreatedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "contactModifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "quote",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "quote"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "contact",
+      "relationshipName": "company",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210311154552",
+  "entityTableName": "contact",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

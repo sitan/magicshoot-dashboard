@@ -1,0 +1,26 @@
+{
+  "dashboardApp": {
+    "print": {
+      "home": {
+        "title": "Prints",
+        "createLabel": "Créer un nouveau Print",
+        "createOrEditLabel": "Créer ou éditer un Print",
+        "notFound": "Aucun Print trouvé"
+      },
+      "created": "Un nouveau Print a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Print avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Print avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Print {{ id }} ?"
+      },
+      "detail": {
+        "title": "Print"
+      },
+      "printId": "Print Id",
+      "printName": "Print Name",
+      "printType": "Print Type",
+      "printWidth": "Print Width",
+      "printHeight": "Print Height"
+    }
+  }
+}
