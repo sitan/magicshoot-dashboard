@@ -1,0 +1,63 @@
+{
+  "name": "Quote",
+  "fields": [
+    {
+      "fieldName": "quoteId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "contactId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "companyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "quoteDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quotePrice",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "orderNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "quoteCreatedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "quoteModifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "invoice",
+      "otherEntityRelationshipName": "quote",
+      "relationshipName": "invoice"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "quote",
+      "relationshipName": "contact",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210311154752",
+  "entityTableName": "quote",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

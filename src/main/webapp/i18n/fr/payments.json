@@ -1,0 +1,23 @@
+{
+  "dashboardApp": {
+    "payments": {
+      "home": {
+        "title": "Payments",
+        "createLabel": "Créer un nouveau Payments",
+        "createOrEditLabel": "Créer ou éditer un Payments",
+        "notFound": "Aucun Payments trouvé"
+      },
+      "created": "Un nouveau Payments a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Payments avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Payments avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Payments {{ id }} ?"
+      },
+      "detail": {
+        "title": "Payments"
+      },
+      "paymentId": "Payment Id",
+      "paymentDateTime": "Payment Date Time"
+    }
+  }
+}

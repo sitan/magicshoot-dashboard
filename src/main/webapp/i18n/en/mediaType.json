@@ -1,0 +1,11 @@
+{
+  "dashboardApp": {
+    "MediaType": {
+      "null": "",
+      "PHOTO": "PHOTO",
+      "VIDEO": "VIDEO",
+      "SOUND": "SOUND",
+      "MUSIC": "MUSIC"
+    }
+  }
+}

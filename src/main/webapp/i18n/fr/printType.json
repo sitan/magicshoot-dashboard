@@ -1,0 +1,9 @@
+{
+  "dashboardApp": {
+    "PrintType": {
+      "null": "",
+      "GLANZEND": "GLANZEND",
+      "MAT": "MAT"
+    }
+  }
+}

@@ -9,9 +9,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpSession;
-import nl.magicshoot.dashboard.MagicshootDashboardApp;
+import nl.magicshoot.dashboard.DashboardApp;
 import nl.magicshoot.dashboard.config.Constants;
-import nl.magicshoot.dashboard.config.TestSecurityConfiguration;
 import nl.magicshoot.dashboard.config.audit.AuditEventConverter;
 import nl.magicshoot.dashboard.domain.PersistentAuditEvent;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,7 +26,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = { MagicshootDashboardApp.class, TestSecurityConfiguration.class })
+@SpringBootTest(classes = DashboardApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
     @Autowired

@@ -1,0 +1,30 @@
+{
+  "name": "MediaOut",
+  "fields": [
+    {
+      "fieldName": "mediaOutId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "mediaOutName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mediaOutType",
+      "fieldType": "MediaType",
+      "fieldValues": "PHOTO,VIDEO,SOUND,MUSIC"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210311155252",
+  "entityTableName": "media_out",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

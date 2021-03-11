@@ -1,0 +1,30 @@
+{
+  "dashboardApp": {
+    "reseller": {
+      "home": {
+        "title": "Resellers",
+        "createLabel": "Créer un nouveau Reseller",
+        "createOrEditLabel": "Créer ou éditer un Reseller",
+        "notFound": "Aucun Reseller trouvé"
+      },
+      "created": "Un nouveau Reseller a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Reseller avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Reseller avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Reseller {{ id }} ?"
+      },
+      "detail": {
+        "title": "Reseller"
+      },
+      "resellerId": "Reseller Id",
+      "adminId": "Admin Id",
+      "resellerName": "Reseller Name",
+      "resellerEmail": "Reseller Email",
+      "resellerPassword": "Reseller Password",
+      "resellerCreatedAt": "Reseller Created At",
+      "resellerModifiedAt": "Reseller Modified At",
+      "company": "Company",
+      "admin": "Admin"
+    }
+  }
+}

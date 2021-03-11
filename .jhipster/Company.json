@@ -1,0 +1,127 @@
+{
+  "name": "Company",
+  "fields": [
+    {
+      "fieldName": "companyId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resellerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingAdress1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingAdress2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingZip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "billingPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingAdress1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingAdress2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingZip",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingPlace",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingCountry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shippingPhone",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "vatPercentage",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "vatNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyCreatedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "companyModifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "event",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "event"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "customer"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "contact"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "reseller",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "reseller",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210311154452",
+  "entityTableName": "company",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

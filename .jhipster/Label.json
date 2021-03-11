@@ -1,0 +1,38 @@
+{
+  "name": "Label",
+  "fields": [
+    {
+      "fieldName": "labelId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "labelName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "labelType",
+      "fieldType": "LabelType",
+      "fieldValues": "THERMISCH,INKT"
+    },
+    {
+      "fieldName": "labelWidth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "labelHeight",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210311155352",
+  "entityTableName": "label",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

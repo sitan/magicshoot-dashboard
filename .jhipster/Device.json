@@ -1,0 +1,30 @@
+{
+  "name": "Device",
+  "fields": [
+    {
+      "fieldName": "deviceId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "deviceName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deviceType",
+      "fieldType": "DeviceType",
+      "fieldValues": "CAMERA,PAYTER,LABELPRINTER,PHOTOPRINTER,TOUCHSCREEN,TV40INCH,PC,MODEM"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210311155052",
+  "entityTableName": "device",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

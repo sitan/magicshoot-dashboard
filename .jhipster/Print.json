@@ -1,0 +1,38 @@
+{
+  "name": "Print",
+  "fields": [
+    {
+      "fieldName": "printId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "printName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "printType",
+      "fieldType": "PrintType",
+      "fieldValues": "GLANZEND,MAT"
+    },
+    {
+      "fieldName": "printWidth",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "printHeight",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20210311155452",
+  "entityTableName": "print",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

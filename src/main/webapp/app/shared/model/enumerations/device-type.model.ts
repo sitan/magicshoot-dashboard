@@ -1,0 +1,17 @@
+export const enum DeviceType {
+  CAMERA = 'CAMERA',
+
+  PAYTER = 'PAYTER',
+
+  LABELPRINTER = 'LABELPRINTER',
+
+  PHOTOPRINTER = 'PHOTOPRINTER',
+
+  TOUCHSCREEN = 'TOUCHSCREEN',
+
+  TV40INCH = 'TV40INCH',
+
+  PC = 'PC',
+
+  MODEM = 'MODEM',
+}

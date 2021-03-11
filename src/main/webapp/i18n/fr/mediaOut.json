@@ -1,0 +1,24 @@
+{
+  "dashboardApp": {
+    "mediaOut": {
+      "home": {
+        "title": "MediaOuts",
+        "createLabel": "Créer un nouveau Media Out",
+        "createOrEditLabel": "Créer ou éditer un Media Out",
+        "notFound": "Aucun Media Out trouvé"
+      },
+      "created": "Un nouveau Media Out a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Media Out avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Media Out avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Media Out {{ id }} ?"
+      },
+      "detail": {
+        "title": "Media Out"
+      },
+      "mediaOutId": "Media Out Id",
+      "mediaOutName": "Media Out Name",
+      "mediaOutType": "Media Out Type"
+    }
+  }
+}

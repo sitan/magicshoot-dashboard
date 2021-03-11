@@ -1,0 +1,9 @@
+export const enum MediaUse {
+  FOREGROUND = 'FOREGROUND',
+
+  BACKGROUND = 'BACKGROUND',
+
+  HANDPROP = 'HANDPROP',
+
+  FACEPROP = 'FACEPROP',
+}

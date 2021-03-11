@@ -1,0 +1,59 @@
+{
+  "name": "Reseller",
+  "fields": [
+    {
+      "fieldName": "resellerId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "adminId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "resellerName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resellerEmail",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resellerPassword",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "resellerCreatedAt",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "resellerModifiedAt",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "company",
+      "otherEntityRelationshipName": "reseller",
+      "relationshipName": "company"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "admin",
+      "otherEntityRelationshipName": "reseller",
+      "relationshipName": "admin",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20210311154352",
+  "entityTableName": "reseller",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["dashboard"]
+}

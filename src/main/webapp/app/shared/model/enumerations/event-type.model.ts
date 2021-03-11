@@ -1,0 +1,7 @@
+export const enum EventType {
+  ONEOFF = 'ONEOFF',
+
+  MULTIPLEDAYS = 'MULTIPLEDAYS',
+
+  SEMIPERMANENT = 'SEMIPERMANENT',
+}
